@@ -243,6 +243,7 @@ body {
     border-radius: 20px;
     z-index: 1;
     box-shadow: 2px 4px 12px 0px #00000014;
+    cursor: pointer;
 }
 
 #readmore {
