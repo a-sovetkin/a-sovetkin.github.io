@@ -261,7 +261,6 @@ body {
 
 #readmore:checked ~ .forecast-container .triangle {
     transform: rotate(180deg);
-    /* transition: transform 0.5s linear; */
 }
 
 
@@ -277,7 +276,7 @@ body {
 .triangle::before {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 3px;
     height: 10px;
     width: 2px;
     background-color: #a7a7a7;
@@ -289,7 +288,7 @@ body {
 .triangle::after {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 3px;
     height: 2px;
     width: 10px;
     background-color:  #a7a7a7;
