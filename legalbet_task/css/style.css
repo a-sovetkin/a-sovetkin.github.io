@@ -252,12 +252,12 @@ body {
 
 #readmore:checked ~ .expert-container .description::before {
     opacity: 0;
-    transition: opacity 0.5s linear;
+    transition: opacity .7s linear;
 }
 
 #readmore:checked~ .expert-container .description {
     max-height: 300px;
-    transition: max-height 0.5s linear;
+    transition: max-height .7s linear;
 }
 
 #readmore:checked ~ .forecast-container .triangle {
@@ -271,7 +271,7 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    transition: transform 0.6s linear;
+    transition: transform .6s linear;
 }
 
 .triangle::before {
