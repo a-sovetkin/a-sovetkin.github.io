@@ -1,0 +1,405 @@
+@import url('fonts.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f1f2;
+    display: flex;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: left;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 76.8rem;
+    height: max-content;
+    margin: 10rem auto;
+    border-radius: .8rem;
+    background-color: white;
+    padding-bottom: 1.6rem;
+}
+
+.expert-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.4rem;
+}
+
+.expert-statistic {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.expert-info {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.expert-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: .2rem;
+    justify-content: center;
+}
+
+.text-container {
+    font-size: 1.6rem;
+}
+
+.name {
+    font-weight: 600;
+    color: #000000CC;
+}
+
+.ratio-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.forecast-container {
+    display: flex;
+    background: #F0F1F266;
+}
+
+.stat-period {
+    display: flex;
+    color: #00000066;
+}
+
+.description {
+    color: #00000099;
+    line-height: 2.4rem;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.5s linear;
+    max-height: 12rem;
+}
+
+.description::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 27px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.expert-wrapper-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.value {
+    font-weight: 600;
+}
+
+.c-green {
+    color: #62B435;
+}
+
+.c-grey{
+    color: #00000066;
+}
+
+.c-red {
+    color: #F64747;
+}
+
+.roi .caption,
+.profit .caption {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.separator {
+    height: 1px;
+    background-color: #0000001A;
+}
+
+.stat::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #0000001A;
+}
+
+.stat {
+    width: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    position: relative;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    padding: 24px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    background: #F0F1F266;
+}
+
+.forecast-container::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #3498DB;
+    height: 100%;
+    left: 0;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.forecast-header {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    color: #00000066;
+    font-weight: 600;
+}
+
+.forecast-text {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #000000CC;
+    font-weight: 600;
+}
+
+.ratio-count {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-family: 'Futura PT';
+    font-weight: 500;
+}
+
+.ratio-count::before {
+    content: "Коэффициент";
+    font-family: 'Proxima Nova Rg', sans-serif;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding-right: 4px;
+}
+
+.make-bet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498DB;
+    color: white;
+    border-radius: .4rem;
+    text-decoration: none;
+    width: 14rem;
+    height: 4rem;
+}
+
+.make-bet:hover {
+    background-color: #5bace2;
+}
+
+.make-bet-text {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-weight: 600;
+}
+
+.readmore {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: -15px;
+    background-color: white;
+    transform: translate(-50%, -5%);
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 2px 4px 12px 0px #00000014;
+}
+
+#readmore {
+    display: none;
+}
+
+#readmore:checked ~ .expert-container .description::before {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#readmore:checked~ .expert-container .description {
+    max-height: 300px;
+    transition: max-height 0.5s linear;
+}
+
+#readmore:checked ~ .forecast-container .triangle {
+    transform: rotate(180deg);
+    /* transition: transform 0.5s linear; */
+}
+
+
+.triangle {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.6s linear;
+}
+
+.triangle::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 10px;
+    width: 2px;
+    background-color: #a7a7a7;
+    content: "";
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.triangle::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 10px;
+    background-color:  #a7a7a7;
+    content: "";
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+@media (max-width: 744px) {
+    .stat-description {
+        display: none;
+    }
+    .expert-wrapper{
+        flex-direction: row;
+    }
+    .name {
+        flex-grow: 1;
+    }
+    .expert-wrapper-container {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .caption {
+        display: none;
+    }
+
+    .roi .value::before {
+        content: 'ROI';
+        color: #000000CC;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin: auto;
+        padding-right: 5px;
+    }
+
+    .profit {
+        flex-grow: 1;
+        text-align: right;
+    }
+
+    .forecast-text {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .button-wrapper,
+    .make-bet {
+        width: 100%;
+    }
+
+    .stat {
+        width: max-content;
+    }
+
+    .expert-container {
+        padding: 1.6rem;
+    }
+
+    .expert-info {
+        gap: 0.8rem;
+    }
+
+    .expert-container {
+        gap: 1.6rem;
+    }
+
+    .expert-statistic {
+        gap: 1.3rem;
+    }
+
+    .stat::after {
+        content: '';
+        height: 1.1rem;
+        width: 1px;
+        top: 3px;
+        right: -7px;
+        transform: rotate(19deg);
+        background-color: #00000033;
+    }
+
+    .stat.profit::after,
+    .stat.roi::after {
+        display: none;
+    }
+    .roi .value {
+        color: #62B435;
+    }
+
+    .forecast-container {
+        padding: 1.6rem;
+        justify-content: space-between;
+    }
+
+    .ratio-container {
+        align-self:flex-end
+    }
+
+    .ratio-count::before {
+        content: "Кэф";
+    }
+
+    .ratio-count {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
