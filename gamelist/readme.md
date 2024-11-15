@@ -31,15 +31,13 @@ https://a-sovetkin.github.io/gamelist/
 - основная часть - список карточек
 - footer
 
+
 <img width="590" alt="gamelist_structure" src="https://github.com/user-attachments/assets/a02b8912-64d6-407f-a4c4-bd00342e1bce">
 
-# Скриншоты адаптивных версий!
-<img width="907" alt="gamelist_adaptive_1" src="https://github.com/user-attachments/assets/751aae47-434f-4811-89cc-883156fea35a">
-<img width="740" alt="gamelist_adaptive_2" src="https://github.com/user-attachments/assets/756cd8dc-9798-42c4-99d8-7daacbfe59d9">
-<img width="409" alt="gamelist_adaptive_3" src="https://github.com/user-attachments/assets/0f5541e5-a4b1-4fa3-8fe9-d558451fe0db">
-
-
-
+## Скриншоты адаптивных версий
+<img width="600" alt="gamelist_adaptive_1" src="https://github.com/user-attachments/assets/751aae47-434f-4811-89cc-883156fea35a">
+<img width="360" alt="gamelist_adaptive_2" src="https://github.com/user-attachments/assets/756cd8dc-9798-42c4-99d8-7daacbfe59d9">
+<img width="200" alt="gamelist_adaptive_3" src="https://github.com/user-attachments/assets/0f5541e5-a4b1-4fa3-8fe9-d558451fe0db">
 
 
 
