@@ -1,4 +1,4 @@
-<img width="740" alt="gamelist_adaptive_2" src="https://github.com/user-attachments/assets/9937d2cf-45e6-4400-8cf5-a44bf7af804c">## Задание "Создать страницу для визуализации данных об играх с использованием открытого API."
+## Задание "Создать страницу для визуализации данных об играх с использованием открытого API."
 
 https://a-sovetkin.github.io/gamelist/ 
 
